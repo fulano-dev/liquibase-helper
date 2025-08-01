@@ -1,7 +1,7 @@
 {
   "name": "liquibase-helper",
   "displayName": "Liquibase Helper",
-  "description": "Facilita a inclusão de scripts Liquibase com interface gráfica, upload de arquivos, numeração automática e padronização completa.",
+  "description": "Extensão VS Code para criação automatizada de scripts Liquibase com interface gráfica, upload de arquivos, numeração sequencial e geração de changelogs XML padronizados.",
   "version": "1.0.0",
   "publisher": "fulano-dev",
   "author": {
