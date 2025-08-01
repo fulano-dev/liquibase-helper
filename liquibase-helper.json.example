@@ -1,0 +1,5 @@
+{
+  "author": "seu.nome",
+  "liquibaseDirectory": "src/main/resources/db/changelog",
+  "masterChangelogPath": "src/main/resources/db/changelog/db.changelog-master.xml"
+}

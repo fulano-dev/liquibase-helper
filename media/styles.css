@@ -1,0 +1,151 @@
+/* Estilos para o Liquibase Helper */
+body {
+    font-family: var(--vscode-font-family, -apple-system, BlinkMacSystemFont, sans-serif);
+    color: var(--vscode-foreground);
+    background-color: var(--vscode-editor-background);
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid var(--vscode-panel-border, #cccccc);
+    border-radius: 4px;
+    background-color: var(--vscode-editor-background);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--vscode-foreground);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--vscode-input-border, #cccccc);
+    background-color: var(--vscode-input-background, #ffffff);
+    color: var(--vscode-input-foreground, #000000);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 4px;
+    border: 2px dashed var(--vscode-input-border, #cccccc);
+    background-color: var(--vscode-input-background, #ffffff);
+}
+
+input[type="file"]:hover {
+    border-color: var(--vscode-button-background, #0e639c);
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    font-weight: normal !important;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 8px;
+}
+
+.radio-option:hover {
+    color: var(--vscode-button-background, #0e639c);
+}
+
+small {
+    color: var(--vscode-descriptionForeground, #717171);
+    font-size: 0.85em;
+    display: block;
+    margin-top: 3px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: var(--vscode-editor-font-family, monospace);
+}
+
+button {
+    padding: 8px 16px;
+    background-color: var(--vscode-button-background, #0e639c);
+    color: var(--vscode-button-foreground, #ffffff);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: var(--vscode-button-hoverBackground, #1177bb);
+}
+
+button.secondary {
+    background-color: var(--vscode-button-secondaryBackground, #5f6a79);
+    color: var(--vscode-button-secondaryForeground, #ffffff);
+}
+
+button.secondary:hover {
+    background-color: var(--vscode-button-secondaryHoverBackground, #6c7b8a);
+}
+
+.branch-info {
+    background-color: var(--vscode-textBlockQuote-background, #f8f8f8);
+    padding: 10px;
+    border-left: 4px solid var(--vscode-textBlockQuote-border, #007acc);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: var(--vscode-errorForeground, #f14c4c);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.success {
+    color: var(--vscode-terminal-ansiGreen, #16825d);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+h1, h2 {
+    color: var(--vscode-foreground);
+    margin-top: 0;
+}
+
+h1 {
+    border-bottom: 1px solid var(--vscode-panel-border, #cccccc);
+    padding-bottom: 10px;
+}

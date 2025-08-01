@@ -1,0 +1,87 @@
+{
+  "name": "liquibase-helper",
+  "displayName": "Liquibase Helper",
+  "description": "Facilita a inclusão de scripts Liquibase com interface gráfica, upload de arquivos, numeração automática e padronização completa.",
+  "version": "1.0.0",
+  "publisher": "fulano-dev",
+  "author": {
+    "name": "João Pedro Vargas",
+    "email": "joao@fulano.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fulano-dev",
+  "bugs": {
+    "url": "https://github.com/fulano-dev/liquibase-helper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulano-dev/liquibase-helper.git"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets", 
+    "Formatters"
+  ],
+  "keywords": [
+    "liquibase",
+    "database",
+    "migration",
+    "sql",
+    "changelog",
+    "devops",
+    "database-migration",
+    "sql-scripts",
+    "version-control"
+  ],
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onCommand:liquibase-helper.start"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "liquibase-helper.start",
+        "title": "Abrir Liquibase Helper",
+        "category": "Liquibase"
+      },
+      {
+        "command": "liquibase-helper.configure",
+        "title": "Configurar Liquibase Helper",
+        "category": "Liquibase"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "liquibase-helper.start",
+          "when": "workspaceFolderCount > 0"
+        },
+        {
+          "command": "liquibase-helper.configure",
+          "when": "workspaceFolderCount > 0"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "install-local": "code --install-extension liquibase-helper-1.0.0.vsix"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "@types/vscode": "^1.50.0",
+    "typescript": "^4.0.3"
+  }
+}
